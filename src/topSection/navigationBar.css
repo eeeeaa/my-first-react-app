@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 1em;
+  color: white;
+}
+
+.nav-logo {
+  font-size: x-large;
+  margin-right: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1em;
+}

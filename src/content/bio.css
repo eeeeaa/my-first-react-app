@@ -1,0 +1,22 @@
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  text-align: center;
+  margin: 1em;
+}
+
+.bio-list {
+  padding: 0;
+}
+
+.bio-list li {
+  list-style: none;
+}
+
+.card {
+  border: 1px solid white;
+  border-radius: 1em;
+  padding: 1em;
+}
