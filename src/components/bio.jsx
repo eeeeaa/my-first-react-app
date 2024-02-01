@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import "./bio.css";
+import "../styles/bio.css";
 function AnimalItem({ animal }) {
   return <li>{animal}</li>;
 }

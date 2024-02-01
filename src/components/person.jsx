@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./person.css";
+import "../styles/person.css";
 
 export function Person() {
   const [person, setPerson] = useState({

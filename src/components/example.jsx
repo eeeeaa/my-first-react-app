@@ -1,6 +1,6 @@
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
-import "./example.css";
+import "../styles/example.css";
 
 /* Note: <> ... </> (React Fragment) is when you dont want multiple elements to have container */
 export function ExampleContent() {

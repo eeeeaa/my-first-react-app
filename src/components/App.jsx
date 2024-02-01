@@ -1,7 +1,7 @@
-import { NavBar } from "./topSection/navigationBar.jsx";
+import { NavBar } from "./navigationBar.jsx";
 import { useState } from "react";
-import { Bio } from "./content/bio.jsx";
-import "./App.css";
+import { Bio } from "./bio.jsx";
+import "../styles/App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState(<Bio />);

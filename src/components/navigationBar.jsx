@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import "./navigationBar.css";
-import { Bio } from "../content/bio.jsx";
-import { ExampleContent } from "../others/example.jsx";
-import { Person } from "../content/person.jsx";
+import "../styles/navigationBar.css";
+import { Bio } from "./bio.jsx";
+import { ExampleContent } from "./example.jsx";
+import { Person } from "./person.jsx";
 import { useState } from "react";
 
 function generateRandomColor() {
