@@ -1,0 +1,28 @@
+.class-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ul {
+    align-self: normal;
+  }
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.todo-text {
+  margin-right: auto;
+}

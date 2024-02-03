@@ -17,3 +17,13 @@
   display: flex;
   gap: 1em;
 }
+
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-buttons {
+    flex-direction: column;
+  }
+}

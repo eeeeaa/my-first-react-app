@@ -4,6 +4,7 @@ import { Bio } from "./bio.jsx";
 import { ExampleContent } from "./example.jsx";
 import { Person } from "./person.jsx";
 import ChatRoomPage from "./mockChatRoom.jsx";
+import ClassInput from "./legacyExample.jsx";
 import { useState } from "react";
 
 function generateRandomColor() {
@@ -38,6 +39,9 @@ export function NavBar({ handleNavClick, handleColorChangeClick }) {
         <button onClick={() => handleNavClick(<Person />)}>Person</button>
         <button onClick={() => handleNavClick(<ChatRoomPage />)}>
           Mock Chatroom
+        </button>
+        <button onClick={() => handleNavClick(<ClassInput />)}>
+          Legacy Example
         </button>
       </div>
     </div>
