@@ -15,7 +15,11 @@ function App() {
     setBackgroundColor(backgroundColor);
   };
   return (
-    <div className="appLayout" style={{ backgroundColor }}>
+    <div
+      className="appLayout"
+      style={{ backgroundColor }}
+      data-testid="main-app-page"
+    >
       <NavBar
         handleNavClick={onNavButtonClick}
         handleColorChangeClick={onColorChangeClick}
