@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import "../styles/navigationBar.css";
 import { Bio } from "./bio.jsx";
 import { ExampleContent } from "./example.jsx";
@@ -6,6 +5,7 @@ import { Person } from "./person.jsx";
 import ChatRoomPage from "./mockChatRoom.jsx";
 import ClassInput from "./legacyExample.jsx";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 function generateRandomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -26,7 +26,7 @@ function RandomColorButton({ handleColorChangeClick }) {
   );
 }
 
-export function NavBar({ handleNavClick, handleColorChangeClick }) {
+function NavBar({ handleNavClick, handleColorChangeClick }) {
   return (
     <div className="nav-bar">
       <div className="nav-logo">Dummy Corp</div>
@@ -47,3 +47,14 @@ export function NavBar({ handleNavClick, handleColorChangeClick }) {
     </div>
   );
 }
+
+RandomColorButton.propTypes = {
+  handleColorChangeClick: PropTypes.func.isRequired,
+};
+
+NavBar.propTypes = {
+  handleColorChangeClick: PropTypes.func.isRequired,
+  handleNavClick: PropTypes.func.isRequired,
+};
+
+export { NavBar };

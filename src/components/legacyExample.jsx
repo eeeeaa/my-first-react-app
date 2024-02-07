@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 /**
  * Older React codebase (before hook like useState, etc. exist)
  * would use class-based components instead of function
@@ -7,8 +5,9 @@
  *
  */
 
-import React, { Component } from "react";
+import { Component } from "react";
 import "../styles/legacyExample.css";
+import PropTypes from "prop-types";
 
 class TodoItem extends Component {
   constructor(props) {
@@ -214,5 +213,25 @@ class ClassInput extends Component {
     );
   }
 }
+
+TodoItem.propTypes = {
+  handleDelete: PropTypes.func.isRequired,
+  todo: PropTypes.shape({
+    text: PropTypes.string,
+    isEdit: PropTypes.bool,
+  }).isRequired,
+  handleEditToggle: PropTypes.func.isRequired,
+  handleResubmit: PropTypes.func.isRequired,
+};
+
+InputFrom.propTypes = {
+  inputVal: PropTypes.string.isRequired,
+  handleInputChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+};
+
+ClassInput.propTypes = {
+  name: PropTypes.string,
+};
 
 export default ClassInput;

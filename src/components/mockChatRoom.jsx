@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 function createConnection(serverUrl, roomId) {
   // Mock implementation
@@ -45,7 +45,7 @@ function ChatRoom({ roomId }) {
   );
 }
 
-export default function ChatRoomPage() {
+function ChatRoomPage() {
   const [roomId, setRoomId] = useState("general");
   return (
     <>
@@ -62,3 +62,9 @@ export default function ChatRoomPage() {
     </>
   );
 }
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
+};
+
+export default ChatRoomPage;
