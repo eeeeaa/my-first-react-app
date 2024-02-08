@@ -27,7 +27,7 @@ export function Person() {
   };
 
   return (
-    <>
+    <div className="person-container fade-in">
       <h1>{fullName}</h1>
       <h2>{person.age}</h2>
       <div className="input-field">
@@ -47,6 +47,6 @@ export function Person() {
         ></input>
         <button onClick={handleIncreaseAge}>Increase age</button>
       </div>
-    </>
+    </div>
   );
 }

@@ -82,7 +82,7 @@ export function Bio() {
   ];
 
   return (
-    <div className="bio-container">
+    <div className="bio-container fade-in">
       <div className="intro">
         <h1>{data.greetText}</h1>
       </div>

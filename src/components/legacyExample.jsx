@@ -189,7 +189,7 @@ class ClassInput extends Component {
 
   render() {
     return (
-      <section className="class-input-container">
+      <section className="class-input-container fade-in">
         <h1>Class based component</h1>
         <h3>{this.props.name}</h3>
         <InputFrom

@@ -23,131 +23,41 @@ exports[`App component > renders App 1`] = `
           0
           )
         </button>
-        <button>
-          Bio
-        </button>
-        <button>
-          Example
-        </button>
-        <button>
-          Person
-        </button>
-        <button>
-          Mock Chatroom
-        </button>
-        <button>
-          Legacy Example
-        </button>
-      </div>
-    </div>
-    <div
-      class="content"
-    >
-      <div
-        class="bio-container"
-      >
-        <div
-          class="intro"
+        <a
+          href="/"
         >
-          <h1>
-            Welcome to my website!
-          </h1>
-        </div>
-        <p
-          class="summary"
+          <button>
+            Bio
+          </button>
+        </a>
+        <a
+          href="/example"
         >
-          You can find 
-          Leeroy
-          's thoughts here.
-        </p>
-        <div
-          class="card"
+          <button>
+            Example
+          </button>
+        </a>
+        <a
+          href="/person"
         >
-          <img
-            alt="Leeroy"
-            class="avatar"
-            height="64"
-            src="https://www.shutterstock.com/image-vector/illustration-retro-style-city-pixel-600nw-2289504657.jpg"
-            width="64"
-          />
-        </div>
-        <div>
-          <h2>
-            Here's a list of things about me
-          </h2>
-          <ul
-            class="bio-list"
-          >
-            <li>
-              I love animals
-            </li>
-            <li>
-              I hate veggies
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>
-            Here's a list of things of my favorite animals
-          </h2>
-          <ul
-            class="bio-list"
-          >
-            <li>
-              dog
-            </li>
-            <li>
-              cat
-            </li>
-            <li>
-              bird
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`App component > renders magnificent monkeys 1`] = `
-<div>
-  <div
-    class="appLayout"
-    data-testid="main-app-page"
-    style="background-color: rgb(36, 36, 36);"
-  >
-    <div
-      class="nav-bar"
-    >
-      <div
-        class="nav-logo"
-      >
-        Dummy Corp
-      </div>
-      <div
-        class="nav-buttons"
-      >
-        <button>
-          Random Color (
-          0
-          )
-        </button>
-        <button>
-          Bio
-        </button>
-        <button>
-          Example
-        </button>
-        <button>
-          Person
-        </button>
-        <button>
-          Mock Chatroom
-        </button>
-        <button>
-          Legacy Example
-        </button>
+          <button>
+            Person
+          </button>
+        </a>
+        <a
+          href="/chatroom"
+        >
+          <button>
+            Chatroom
+          </button>
+        </a>
+        <a
+          href="/legacy-example"
+        >
+          <button>
+            Legacy Example
+          </button>
+        </a>
       </div>
     </div>
     <div

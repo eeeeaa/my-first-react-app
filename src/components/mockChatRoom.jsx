@@ -48,7 +48,7 @@ function ChatRoom({ roomId }) {
 function ChatRoomPage() {
   const [roomId, setRoomId] = useState("general");
   return (
-    <>
+    <div className="chat-room-contaienr fade-in">
       <label>
         Choose the chat room:{" "}
         <select value={roomId} onChange={(e) => setRoomId(e.target.value)}>
@@ -59,7 +59,7 @@ function ChatRoomPage() {
       </label>
       <hr />
       <ChatRoom roomId={roomId} />
-    </>
+    </div>
   );
 }
 

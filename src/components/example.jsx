@@ -6,7 +6,7 @@ import "../styles/example.css";
 export function ExampleContent() {
   return (
     <>
-      <div>
+      <div className="fade-in">
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
