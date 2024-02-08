@@ -6,6 +6,7 @@ import { Person } from "./person.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import ChatRoomPage from "./mockChatRoom.jsx";
 import ClassInput from "./legacyExample.jsx";
+import Image from "./networkExample.jsx";
 import "../styles/App.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "legacy-example",
         element: <ClassInput />,
+      },
+      {
+        path: "network-example",
+        element: <Image />,
       },
     ],
   },

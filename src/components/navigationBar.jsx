@@ -24,27 +24,35 @@ function RandomColorButton({ handleColorChangeClick }) {
 
 function NavBar({ handleColorChangeClick }) {
   return (
-    <div className="nav-bar">
+    <section className="top-nav">
       <div className="nav-logo">Dummy Corp</div>
-      <div className="nav-buttons">
-        <RandomColorButton handleColorChangeClick={handleColorChangeClick} />
-        <Link to="/">
-          <button>Bio</button>
-        </Link>
-        <Link to="example">
-          <button>Example</button>
-        </Link>
-        <Link to="person">
-          <button>Person</button>
-        </Link>
-        <Link to="chatroom">
-          <button>Chatroom</button>
-        </Link>
-        <Link to="legacy-example">
-          <button>Legacy Example</button>
-        </Link>
-      </div>
-    </div>
+      <RandomColorButton handleColorChangeClick={handleColorChangeClick} />
+      <input id="menu-toggle" type="checkbox" />
+      <label className="menu-button-container" htmlFor="menu-toggle">
+        <div className="menu-button"></div>
+      </label>
+
+      <ul className="menu">
+        <li>
+          <Link to="/">Bio</Link>
+        </li>
+        <li>
+          <Link to="example">Example</Link>
+        </li>
+        <li>
+          <Link to="person">Person</Link>
+        </li>
+        <li>
+          <Link to="chatroom">Chatroom</Link>
+        </li>
+        <li>
+          <Link to="legacy-example">Legacy Example</Link>
+        </li>
+        <li>
+          <Link to="network-example">Network Example</Link>
+        </li>
+      </ul>
+    </section>
   );
 }
 
