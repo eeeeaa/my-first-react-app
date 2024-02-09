@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 //create custom hook (just return an object with states as properties)
+//this is similiar to useFetch(...) hook from react-fetch-hook library
 const useImageURL = () => {
   const [imageURL, setImageURL] = useState(null);
   const [error, setError] = useState(null);
